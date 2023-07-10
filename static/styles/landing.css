@@ -1,0 +1,60 @@
+body {
+    background-image : url('background.jpg');
+    height: 500px;
+    background-size : cover;
+    background-position: center;
+}
+
+.main {
+    margin : 0;
+    position : absolute;
+    top : 30%;
+    left : 50%;
+    -ms-transform : translate(-50%, -50%);
+    transform : translate(-50%, -50%);
+    font-family : 'Darker Grotesque';
+    color : whitesmoke;
+}
+
+.side {
+    margin : 0;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    -ms-transform : translate(-50%, -50%);
+    transform : translate(-50%, -50%);
+    font-family : serif;
+    color : white;
+}
+
+.button {
+    margin : 0;
+    position : absolute;
+    top : 65%;
+    left : 50%;
+    -ms-transform : translate(-50%, -50%);
+    transform : translate(-50%, -50%);
+}
+
+h1{
+    text-align : center;
+    font-size : 1.4cm;
+    width : 500px;
+    font-weight : bolder;
+}
+
+h3{
+    text-align : center;
+    font-size : 0.9cm;
+    width : 600px;
+}
+/* .login {
+    position: absolute;
+    right: 20px;
+    padding-top: 15px;
+} */
+  .class {
+    position:static;
+    padding-top: 55px;
+    padding-right: 20px;
+  } 

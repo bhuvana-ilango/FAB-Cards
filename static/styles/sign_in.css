@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');          /* used to import one style sheet into another style sheet */
+
+body {
+    background-image : url('background.jpg');
+    height: 500px;
+    background-size : cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    color : #fff;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.container {
+    height : 100vh;
+    display : flex;
+    justify-content : center;
+    align-items: center;
+    font-size : 16px;
+    flex-direction : column;
+}
+
+.box {
+    width : 350px;
+    height : 390px;
+    font-size : 16px;
+    padding : 40px 40px;
+    background : transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius : 48px; 
+}
+
+.profile-solid.icon {
+    color: #fff;
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 11px;
+    width: 14px;
+    height: 6px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px transparent;
+    background-color: currentColor;
+    border-radius: 6px 6px 0 0;
+}
+  
+.profile-solid.icon:before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: -10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+    background-color: currentColor;
+}  
+
+.user {
+    margin-top : 50px;
+}
+
+.fas {
+    position: absolute;
+}
+
+.lock-solid.icon {
+    color: #fff;
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 10px;
+    width: 13px;
+    height: 6px;
+    border-radius: 1px;
+    border: solid 1px currentColor;
+    background-color: currentColor;
+}
+  
+.lock-solid.icon:before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: -8px;
+    width: 5px;
+    height: 6px;
+    border-radius: 4px 4px 0 0;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+}
+  
+input {
+    width : 90%;
+    margin-bottom : 25px;
+    padding : 0px 30px 10px;
+    font-size : 16px;
+    border : none;
+    border-bottom : 1px solid #f5f5ff;
+    outline : none;
+    background-color : transparent;
+    color : #fff;
+    transition : .3s all;
+}
+
+input:focus {
+    border-bottom : 1px solid #ff7f5f;
+}
+
+.login-btn {
+    margin-top : 25px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction : column;
+}
+
+.btn {
+    display : block;
+    width : 70%;
+    padding : 15px;
+    background-color : #3793df;
+    color : #fff;
+    border : none;
+    border-radius : 10px;
+    font-size : 20px;
+    font-weight: 600;
+    opacity : 0.8;
+    transition : .2s all;
+    cursor : pointer;
+}
+
+.btn:hover {
+    opacity : 1;
+}
+
+.navbar-brand {
+    font-weight : bolder;
+    font-family: serif;
+    font-size : xx-large;
+}
