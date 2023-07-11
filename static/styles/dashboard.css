@@ -1,0 +1,79 @@
+body {
+    background-color: #9dc5c3;
+    background-image: linear-gradient(315deg, #9dc5c3 0%, #5e5c5c 74%);
+}
+.navbar-brand {
+    font-weight : bolder;
+    font-family: serif;
+    font-size : xx-large;
+}
+
+li {
+    color : #ffffff;
+    font-size: large;
+}
+
+.big {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family : 'Poppins', sans-serif;
+    color : #fff;
+}
+
+.cardcontainer {
+    display: flex;
+    justify-content : center;
+    align-items: center;
+    height : 50vh;
+}
+
+.box {
+    width : 350px;
+    height : 250px;
+    position : relative;
+}
+
+.box .front, .box .back {
+    position : absolute;
+    width : 350px;
+    height : 250px;
+    display: flex;
+    justify-content : center;
+    align-items: center;
+    flex-direction: column;
+    background : rgb(33, 37, 41);
+    backface-visibility : hidden;
+    cursor : pointer;
+    border-radius: 20px;
+    box-shadow : 0 5px 30px rgba(163, 61, 21, 0.200), 0 -5px 30px rgba(115, 55, 212, 0.200);
+    transition: transform 0.8s;
+}
+
+.box .back {
+    transform : perspective(800px) rotateX(-100deg);
+}
+
+.box .front p, .box .back p {
+    font-size : x-large;
+    font-weight : bolder;
+    margin : 10px 20px;
+    text-align : center;
+}
+
+.box:hover .front {
+    transform: perspective(800px) rotateX(180deg);
+}
+
+.box:hover .back {
+    border-radius: 20px 20px 0 0;
+    transform: perspective(800px) rotateX(0);
+}
+
+.footer {
+    position : fixed;
+    left : 50%;
+    bottom : 100px;
+    transform : translate(-50%, 50%);
+    margin : auto;
+}
